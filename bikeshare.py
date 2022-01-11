@@ -1,6 +1,6 @@
 import time
 import pandas as pd
-
+pd.set_option('display.max_columns', 200)
 
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
@@ -24,7 +24,7 @@ def get_filters():
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
     print('Hello! Let\'s explore some US bikeshare data!')
-    # Get user input for city (chicago, new york city, washington). 
+    # Get user input for city (chicago, new york city, washington).
 
     while True:
            city = input('Which city would you like to explore?: \n Chicago, New York City or Washington? \n> ').lower()
